@@ -1,0 +1,24 @@
+<table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>Price Per Night</th>
+        <th>Provider ID</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let propertly of properties'>
+        <td>{{propertly.userId}}</td>
+        <td>{{propertly.title}}</td>
+        <td>{{propertly.description}}</td>
+        <td>{{propertly.location}}</td>
+        <td>{{propertly.pricePerNight}}</td>
+        <td>{{propertly.providerId}}</td>
+
+      </tr>
+    </tbody>
+  </table>
